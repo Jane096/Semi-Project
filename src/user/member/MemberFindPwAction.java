@@ -32,14 +32,14 @@ public class MemberFindPwAction implements Action{
 			forward.setRedirect(false);
 			forward.setPath("/findpwOk.jsp");
 		}else {
-			response.setContentType("text/html' charset=utf-8");
+			response.setContentType("text/html; charset=utf-8");
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
-			out.println("alert('입력한 정보가 일치하지 않습니다');");
+			out.println("alert('입력한 정보가 일치하지 않습니다.');");
 			out.println("history.go(-1);");
 			out.println("</script>");
 			out.close();
-			forward=null;
+			forward = null;
 		}	
 		return forward;
 	}
