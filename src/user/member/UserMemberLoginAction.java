@@ -19,7 +19,7 @@ public class UserMemberLoginAction implements Action {
 		HttpSession session = request.getSession();
 		ActionForward forward = new ActionForward();
 		UserDAO userDAO = new UserDAO();
-		BoardDAO boardDAO = new BoardDAO();
+		//BoardDAO boardDAO = new BoardDAO(); //not used
 
 		String id = request.getParameter("userID");
 		String pw = request.getParameter("userPassword");
